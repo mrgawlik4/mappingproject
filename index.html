@@ -1,0 +1,690 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <link rel="icon" href="images/mglogosquare2.png" type="image/png" sizes="16x16">
+  <meta charset="utf-8">
+
+  <title>Ann Arbor's Best Food</title>
+  <meta name="description" content="A Map of Things">
+  <meta name="author" content="Michael Gawlik">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/c3.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="css/all.css" rel="stylesheet"> <!--load all styles -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="headbar">
+    <span class="hamburger" onclick="openNav()">
+      &#9776;
+    </span>
+    <h1 class="site-title">Ann Arbor Eats</h1>
+
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <p>Explore</p>
+    <ul>
+    <li>
+      <button class="menu-item" id="menuBells">Bell's Diner</button>
+    </li>
+    <li>
+      <button class="menu-item" id="menuBelly">Belly Deli</button>
+    </li>
+    <li>
+      <button class="menu-item" id="menuBlimpy">Blimpy Burger</button>
+    </li>
+    <li>
+      <button class="menu-item" id="menuEvergreen">Evergreen Restaurant</button>
+    </li>
+    <li>
+      <button class="menu-item" id="menuFrita">Frita Batidos</button>
+    </li>
+    <li>
+      <button class="menu-item" id="menuCharleys">Good Time Charley's</button>
+    </li>
+    <li>
+      <button class="menu-item" id="menuFaz">Hello Faz Pizza</button>
+    </li>
+    <li>
+      <button class="menu-item" id="menuKnights">Knight's Steakhouse</button>
+    </li>
+    <li>
+      <button class="menu-item" id="menuPacific">Pacific Rim</button>
+    </li>
+    <li>
+      <button class="menu-item" id="menuSeafood">Real Seafood Company</button>
+    </li>
+    <li>
+      <button class="menu-item" id="menuTeahaus">TeaHaus</button>
+    </li>
+    <li>
+      <button class="menu-item" id="menuTomukun">Tomukun Korean BBQ</button>
+    </li>
+    <li>
+      <button class="menu-item" id="menuTotoro2">Totoro</button>
+    </li>
+  </ul>
+  </div>
+
+
+
+  <!-- bells Content -->
+
+    <div id="bellsWrap">
+      <div id="bellsContent">
+        <div id="bellsNotice">
+        </div>
+        <h1 id="bellsFirstHeading" class="firstHeading">Bell's Diner</h1>
+        <h6>Ann Arbor's Best Quirky Combo</h6>
+        <div id="bellsBodyContent">
+          <img class="small-pic" src=images/bells-small.jpg>
+          <p>You've probably never been anywhere quire like <b>Bell's Diner</b>, which serves up a combination of Korean and American diner cuisine.</p>
+          <!-- <p><b>2167 W Stadium Blvd Ann Arbor MI, 48103</b></p> -->
+          <button class="learn-button" id='bellsButton'>Learn more</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- bells Modal -->
+    <div id="bellsModal" class="modal">
+      <div class="modal-content">
+        <span id="closeBells" class="close">&times;</span>
+        <h1 class="modal-title">Bell's Diner</h1>
+        <h2 class="modal-sub">Ann Arbor's Best Quirky Combo</h2>
+        <img class="large-pic" src=images/bells-full.jpg>
+        <div class="container-fluid row">
+          <div class="col-lg-3">
+            <h5 class="modal-head">Cuisine</h5>
+            <p class="modal-body-list">Korean, Breakfast</p>
+            <h5 class="modal-head">Price</h5>
+            <p class="modal-body-list">$</p>
+            <h5 class="modal-head">Address</h5>
+            <p class="modal-body-list">2167 W Stadium Blvd, Ann Arbor, MI 48103</p>
+            <h5 class="modal-head">Menu</h5>
+            <p class="modal-body-list"><a class="web-link" href="https://eatstreet.com/ann-arbor-mi/restaurants/bells-diner">Bell's Diner</a></p>
+          </div>
+          <div class="col-lg-9">
+            <!-- <h5 class="modal-head">About</h5> -->
+            <p class="modal-body top-body">Bell's originated as a classic, American diner that served your breakfast staples: Pancakes, eggs, bacon. When a local Korean American family bought the restaurant, they kept those diner classics while adding a panoply of Korean dishes to the menu. </p>
+            <p class="modal-body">Bell's is the perfect place to mix and match dishes. Get some bibimbop with a side of toast. Don't miss the spicy pork, either.  </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+<!-- Evergreen Content -->
+
+  <div id="evergreenWrap">
+    <div id="evergreenContent">
+      <div id="evergreenNotice">
+      </div>
+      <h1 id="evergreenFirstHeading" class="firstHeading">Evergreen Restuarant</h1>
+      <h6>Ann Arbor's Best Chinese Food</h6>
+      <div id="evergreenBodyContent">
+        <img class="small-pic" src=images/evergreen-small.jpg>
+        <p><b>Evergreen Restaurant</b> offers everything from dim sum to Kung Pao Chicken, and its airy interior makes for a tranquil atmosphere.</p>
+        <!-- <p><b>215 S State St #2031, Ann Arbor, MI 48104</b></p> -->
+        <button class="learn-button" id='evergreenButton'>Learn more</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Evergreen Modal -->
+  <div id="evergreenModal" class="modal">
+    <div class="modal-content">
+      <span id="closeEvergreen" class="close">&times;</span>
+      <h1 class="modal-title">Evergreen Restaurant</h1>
+      <h2 class="modal-sub">Ann Arbor's Best Chinese Food</h2>
+      <img class="large-pic" src=images/evergreen-full.jpg>
+      <div class="container-fluid row">
+        <div class="col-lg-3">
+          <h5 class="modal-head">Cuisine</h5>
+          <p class="modal-body-list">Chinese</p>
+          <h5 class="modal-head">Price</h5>
+          <p class="modal-body-list">$$</p>
+          <h5 class="modal-head">Address</h5>
+          <p class="modal-body-list">2771 Plymouth Rd, Ann Arbor, MI 48105</p>
+          <h5 class="modal-head">Menu</h5>
+          <p class="modal-body-list"><a class="web-link" href="https://evergreen-restaurant.com/">Evergreen</a></p>
+        </div>
+        <div class="col-lg-9">
+          <!-- <h5 class="modal-head">About</h5> -->
+          <p class="modal-body top-body">Established in 1992, Evergreen Restuarant has perfected the art of Chinese cooking. The restaurant offers Mandarin, Sizchuan, Hunan, Shanghai and Taiwan dishes, along with a full bar stocked with wine, beer, sake and liquor. Dine in for a tranquil meal in Evergreen's airy dining room, or grab takeout to eat at home. </p>
+          <p class="modal-body">The cashew chicken is one of the menus stand out items, as are the Chinese Oriental Burger, which is available with both lamb or pork. When dining in, make sure to get a pot of Jasmine Tea.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- frita Content -->
+
+    <div id="fritaWrap">
+      <div id="fritaContent">
+        <div id="fritaNotice">
+        </div>
+        <h1 id="fritaFirstHeading" class="firstHeading">Frita Batidos</h1>
+        <h6>Ann Arbor's Best Sandwich</h6>
+        <div id="fritaBodyContent">
+          <img class="small-pic" src=images/frita-small.jpg>
+          <p>You've never had a sandwich like one from <b>Frita Batidos</b>, which serves up Cuban-style burgers and rum-infused frozen cocktails.</p>
+          <!-- <p><b>215 S State St #2031, Ann Arbor, MI 48104</b></p> -->
+          <button class="learn-button" id='fritaButton'>Learn more</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- frita Modal -->
+    <div id="fritaModal" class="modal">
+      <div class="modal-content">
+        <span id="closeFrita" class="close">&times;</span>
+        <h1 class="modal-title">Frita Batidos</h1>
+        <h2 class="modal-sub">Ann Arbor's Best Sandwich</h2>
+        <img class="large-pic" src=images/frita-full.jpg>
+        <div class="container-fluid row">
+          <div class="col-lg-3">
+            <h5 class="modal-head">Cuisine</h5>
+            <p class="modal-body-list">Cuban</p>
+            <h5 class="modal-head">Price</h5>
+            <p class="modal-body-list">$$</p>
+            <h5 class="modal-head">Address</h5>
+            <p class="modal-body-list">117 W Washington St, Ann Arbor, MI 48104</p>
+            <h5 class="modal-head">Menu</h5>
+            <p class="modal-body-list"><a class="web-link" href="http://fritabatidos.com/ann-arbor/food/">Frita Batidos</a></p>
+          </div>
+          <div class="col-lg-9">
+            <!-- <h5 class="modal-head">About</h5> -->
+            <p class="modal-body top-body">Frita Batidos' name cpmes from its two signature items: fritas, or Cuban-inspired burgers, and batidos, frozen cocktails made with light rum. Customers sit in a white-washed brick dining room at communal tables. </p>
+            <p class="modal-body">Served with sweet chili mayo, the beef frita is unmatched, especially when topped with homemade tropical slaw. Grab a passion fruit batido and a side of fried plantains to finish your meal.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Pacific Content -->
+
+      <div id="pacificWrap">
+        <div id="pacificContent">
+          <div id="pacificNotice">
+          </div>
+          <h1 id="pacificFirstHeading" class="firstHeading">Pacific Rim</h1>
+          <h6>Ann Arbor's Best High Dining</h6>
+          <div id="pacificBodyContent">
+            <img class="small-pic" src=images/pacific-small.jpg>
+            <p>Offering some of the best Asian cuisine in Michigan, <b>Pacific Rim</b> is a perfect spot for dinner during a night downtown.</p>
+            <!-- <p><b>215 S State St #2031, Ann Arbor, MI 48104</b></p> -->
+            <button class="learn-button" id='pacificButton'>Learn more</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- pacific Modal -->
+      <div id="pacificModal" class="modal">
+        <div class="modal-content">
+          <span id="closePacific" class="close">&times;</span>
+          <h1 class="modal-title">Pacific Rim</h1>
+          <h2 class="modal-sub">Ann Arbor's Best High Dining</h2>
+          <img class="large-pic" src=images/pacific-full.jpg>
+          <div class="container-fluid row">
+            <div class="col-lg-3">
+              <h5 class="modal-head">Cuisine</h5>
+              <p class="modal-body-list">Pan-Asian, Seafood</p>
+              <h5 class="modal-head">Price</h5>
+              <p class="modal-body-list">$$$$</p>
+              <h5 class="modal-head">Address</h5>
+              <p class="modal-body-list">114 W Liberty St, Ann Arbor, MI 48104</p>
+              <h5 class="modal-head">Menu</h5>
+              <p class="modal-body-list"><a class="web-link" href="https://pacificrimbykana.com/our-menu/">Pacific Rim</a></p>
+            </div>
+            <div class="col-lg-9">
+              <!-- <h5 class="modal-head">About</h5> -->
+              <p class="modal-body top-body">The priciest entry on this list, Pacific Rim is a restaurant for special occassions—which makes eating there all the more exciting. </p>
+              <p class="modal-body">If you're feeling fancy, start off with some Thai-style calamari or crab crostini as an appetizer. For your entree, the clear choice is the Korean-marinated ribeye, which is topped with a quail egg and chili sauce.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- TeaHaus Content -->
+
+        <div id="teahausWrap">
+          <div id="teahausContent">
+            <div id="teahausNotice">
+            </div>
+            <h1 id="teahausFirstHeading" class="firstHeading">TeaHaus</h1>
+            <h6>Ann Arbor's Best Cafe</h6>
+            <div id="teahausBodyContent">
+              <img class="small-pic" src=images/teahaus-small.jpg>
+              <p>In addition to selling loose-leaf tea, <b>TeaHaus</b> offers baked goods, including six unique French macaron flavors every month.</p>
+              <!-- <p><b>215 S State St #2031, Ann Arbor, MI 48104</b></p> -->
+              <button class="learn-button" id='teahausButton'>Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- teahaus Modal -->
+        <div id="teahausModal" class="modal">
+          <div class="modal-content">
+            <span id="closeTeahaus" class="close">&times;</span>
+            <h1 class="modal-title">TeaHaus</h1>
+            <h2 class="modal-sub">Ann Arbor's Best Cafe</h2>
+            <img class="large-pic" src=images/teahaus-full.jpg>
+            <div class="container-fluid row">
+              <div class="col-lg-3">
+                <h5 class="modal-head">Cuisine</h5>
+                <p class="modal-body-list">Tea, Pastries</p>
+                <h5 class="modal-head">Price</h5>
+                <p class="modal-body-list">$$</p>
+                <h5 class="modal-head">Address</h5>
+                <p class="modal-body-list">204–206 N 4th Ave, Ann Arbor, MI 48104</p>
+                <h5 class="modal-head">Menu</h5>
+                <p class="modal-body-list"><a class="web-link" href="https://teahaus.com/pages/tearoom-and-cafe">TeaHaus</a></p>
+              </div>
+              <div class="col-lg-9">
+                <!-- <h5 class="modal-head">About</h5> -->
+                <p class="modal-body top-body">When you walk into TeaHaus, you're greated by an entire wall of tea canisters. The cafe sells loose leaf tea for home use, but also has a dining area if you want to sit down with a pot.</p>
+                <p class="modal-body">And TeaHaus sells more than beverages, offering a huge selection of baked goods and pastries. Most famous are the cafe's French macarons, which change flavors every month (some favorites from the past: pineapple, salted chai, and Cap'n Crunch). </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- knights Content -->
+
+          <div id="knightsWrap">
+            <div id="knightsContent">
+              <div id="knightsNotice">
+              </div>
+              <h1 id="knightsFirstHeading" class="firstHeading">Knight's Steakhouse</h1>
+              <h6>Ann Arbor's Best Meats</h6>
+              <div id="knightsBodyContent">
+                <img class="small-pic" src=images/knights-small.jpg>
+                <p>Dim lighting and a lowkey atmosphere makes for a quiet meal at <b>Knight's</b>, an Ann Arbor classic for almost forty years.</p>
+                <!-- <p><b>215 S State St #2031, Ann Arbor, MI 48104</b></p> -->
+                <button class="learn-button" id='knightsButton'>Learn more</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- knights Modal -->
+          <div id="knightsModal" class="modal">
+            <div class="modal-content">
+              <span id="closeKnights" class="close">&times;</span>
+              <h1 class="modal-title">Knight's Steakhouse</h1>
+              <h2 class="modal-sub">Ann Arbor's Best Meats</h2>
+              <img class="large-pic" src=images/knights-full.jpg>
+              <div class="container-fluid row">
+                <div class="col-lg-3">
+                  <h5 class="modal-head">Cuisine</h5>
+                  <p class="modal-body-list">Steakhouse</p>
+                  <h5 class="modal-head">Price</h5>
+                  <p class="modal-body-list">$$$</p>
+                  <h5 class="modal-head">Address</h5>
+                  <p class="modal-body-list">2324 Dexter Ave, Ann Arbor, MI 48103</p>
+                  <h5 class="modal-head">Menu</h5>
+                  <p class="modal-body-list"><a class="web-link" href="https://knightsrestaurants.com/knights-steakhouse-dexter-avenue">Knight's</a></p>
+                </div>
+                <div class="col-lg-9">
+                  <!-- <h5 class="modal-head">About</h5> -->
+                  <p class="modal-body top-body">An Ann Arbor staple since 1984, Knight's feels like something straight out of the past, offering the city's best meats in a dark, relaxes atmosphere.  </p>
+                  <p class="modal-body">The filet mignon and ribeye are obviously highlights, but don't sleep on the French dip, especially when its smoothered in onions and mushrooms.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- faz Content -->
+
+            <div id="fazWrap">
+              <div id="fazContent">
+                <div id="fazNotice">
+                </div>
+                <h1 id="fazFirstHeading" class="firstHeading">Hello Faz Pizza</h1>
+                <h6>Ann Arbor's Best Pizza</h6>
+                <div id="fazBodyContent">
+                  <img class="small-pic" src=images/faz-small.jpg>
+                  <p>A halal pizzeria, <b>Hello Faz</b> is perhaps most famous for its wall of photos showing founder Faz Husain meeting dignitaries and celebrities from around the world.</p>
+                  <!-- <p><b>2259 W Liberty Rd, Ann Arbor, MI 48103</b></p> -->
+                  <button class="learn-button" id='fazButton'>Learn more</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- faz Modal -->
+            <div id="fazModal" class="modal">
+              <div class="modal-content">
+                <span id="closeFaz" class="close">&times;</span>
+                <h1 class="modal-title">Hello Faz Pizza</h1>
+                <h2 class="modal-sub">Ann Arbor's Best Pizza</h2>
+                <img class="large-pic" src=images/faz-full.jpg>
+                <div class="container-fluid row">
+                  <div class="col-lg-3">
+                    <h5 class="modal-head">Cuisine</h5>
+                    <p class="modal-body-list">Pizza</p>
+                    <h5 class="modal-head">Price</h5>
+                    <p class="modal-body-list">$$</p>
+                    <h5 class="modal-head">Address</h5>
+                    <p class="modal-body-list">2259 W Liberty Rd, Ann Arbor, MI 48103</p>
+                    <h5 class="modal-head">Menu</h5>
+                    <p class="modal-body-list"><a class="web-link" href="https://www.hellofazpizzamenu.com/">Hello Faz</a></p>
+                  </div>
+                  <div class="col-lg-9">
+                    <!-- <h5 class="modal-head">About</h5> -->
+                    <p class="modal-body top-body">Founder Faz Husein might have passed away in 2006, but he still looms large over his Halal pizzeria; on the restaurant's wall, there are dozens of pictures of Faz meeting Bill Clinton, Mother Theresa and the Dalai Lama (among others). </p>
+                    <p class="modal-body">There are endless options at Hello Faz, but the tandoori chicken pizza is unlike anything you'll get at a standard pizzeria. Don't miss the cinnamon bread, either</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- tomukun Content -->
+
+              <div id="tomukunWrap">
+                <div id="tomukunContent">
+                  <div id="tomukunNotice">
+                  </div>
+                  <h1 id="tomukunFirstHeading" class="firstHeading">Tomukun Korean BBQ</h1>
+                  <h6>Ann Arbor's Best BBQ</h6>
+                  <div id="tomukunBodyContent">
+                    <img class="small-pic" src=images/tomukun-small.jpg>
+                    <p>Sitting next-door to its sister noodle shop, <b>Tomukun BBQ</b> allows customers to grill their own meat at the table.</p>
+                    <!-- <p><b>2259 W Liberty Rd, Ann Arbor, MI 48103</b></p> -->
+                    <button class="learn-button" id='tomukunButton'>Learn more</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- tomukun Modal -->
+              <div id="tomukunModal" class="modal">
+                <div class="modal-content">
+                  <span id="closeTomukun" class="close">&times;</span>
+                  <h1 class="modal-title">Tomukun Korean BBQ</h1>
+                  <h2 class="modal-sub">Ann Arbor's Best BBQ</h2>
+                  <img class="large-pic" src=images/tomukun-full.jpg>
+                  <div class="container-fluid row">
+                    <div class="col-lg-3">
+                      <h5 class="modal-head">Cuisine</h5>
+                      <p class="modal-body-list">Korean BBQ</p>
+                      <h5 class="modal-head">Price</h5>
+                      <p class="modal-body-list">$$$</p>
+                      <h5 class="modal-head">Address</h5>
+                      <p class="modal-body-list">505 E Liberty St #100, Ann Arbor, MI 48104</p>
+                      <h5 class="modal-head">Menu</h5>
+                      <p class="modal-body-list"><a class="web-link" href="http://bbq.tomukun.com/">Tomukun BBQ</a></p>
+                    </div>
+                    <div class="col-lg-9">
+                      <!-- <h5 class="modal-head">About</h5> -->
+                      <p class="modal-body top-body">Tomukun is actually a two-for-one restaurant: The right side is a noodle bar, and the left is a Korean BBQ spot. While the noodle bar is wonderful, BBQ is the real standout.</p>
+                      <p class="modal-body">Pick your favorite meats and throw them on the grill, which features at the center of each table. The bulgogi and marinated short ribs are highlights, and all combo platters are served with spreads and sides.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+<!-- Totoro Content -->
+
+<div id="totoroWrap">
+  <div id="totoroContent">
+    <div id="totoroNotice">
+    </div>
+    <h1 id="totoroFirstHeading" class="firstHeading">Totoro</h1>
+    <h6>Ann Arbor's Best Sushi</h6>
+    <div id="totoroBodyContent">
+      <img class="small-pic" src=images/totoro-small.jpg>
+      <p>Named for the beloved Hayao Miyazaki character, <b>Totoro</b> offers dozens of varieties of rolls, sashimi and nagiri.</p>
+      <!-- <p><b>215 S State St #2031, Ann Arbor, MI 48104</b></p> -->
+      <button class="learn-button" id='totoroButton'>Learn more</button>
+    </div>
+  </div>
+</div>
+
+  <!-- Totoro Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span id="close" class="close">&times;</span>
+    <h1 class="modal-title">Totoro</h1>
+    <h2 class="modal-sub">Ann Arbor's Best Sushi</h2>
+    <img class="large-pic" src=images/totoro-full.jpg>
+    <div class="container-fluid row">
+      <div class="col-lg-3">
+        <h5 class="modal-head">Cuisine</h5>
+        <p class="modal-body-list">Sushi</p>
+        <h5 class="modal-head">Price</h5>
+        <p class="modal-body-list">$$$</p>
+        <h5 class="modal-head">Address</h5>
+        <p class="modal-body-list">215 S State St #2031, Ann Arbor, MI 48104</p>
+        <h5 class="modal-head">Menu</h5>
+        <p class="modal-body-list"><a class="web-link" href="https://totoroannarbor.com/">Totoro</a></p>
+      </div>
+      <div class="col-lg-9">
+        <!-- <h5 class="modal-head">About</h5> -->
+        <p class="modal-body top-body">Walking into Totoro is like entering the Hayao Miyazaki film, with a plush of the titular character sitting just inside the door. Earthy, natural decor sets a fun vibe for this hole-in-the-wall.</p>
+        <p class="modal-body">Rolls are strong across the board, but the Volcano Roll is a unique specialty. All meals are served with miso soup and a side salad, which comes with a spectacular ginger dressing.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- belly Content -->
+
+  <div id="bellyWrap">
+    <div id="bellyContent">
+      <div id="bellyNotice">
+      </div>
+      <h1 id="bellyFirstHeading" class="firstHeading">Belly Deli</h1>
+      <h6>Ann Arbor's Best Lunch</h6>
+      <div id="bellyBodyContent">
+        <img class="small-pic" src=images/belly-small.jpg>
+        <p>Selling Vietnamese street food, <b>Belly Deli</b> is best know for its banh mi, but don't sleep on the taro chips.</p>
+        <!-- <p><b>1317 S University Ave, Ann Arbor, MI 48104</b></p> -->
+        <button class="learn-button" id='bellyButton'>Learn more</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- belly Modal -->
+  <div id="bellyModal" class="modal">
+    <div class="modal-content">
+      <span id="closeBelly" class="close">&times;</span>
+      <h1 class="modal-title">Belly Deli</h1>
+      <h2 class="modal-sub">Ann Arbor's Best Lunch</h2>
+      <img class="large-pic" src=images/belly-full.jpg>
+      <div class="container-fluid row">
+        <div class="col-lg-3">
+          <h5 class="modal-head">Cuisine</h5>
+          <p class="modal-body-list">Vietnamese</p>
+          <h5 class="modal-head">Price</h5>
+          <p class="modal-body-list">$</p>
+          <h5 class="modal-head">Address</h5>
+          <p class="modal-body-list">1317 S University Ave, Ann Arbor, MI 48104</p>
+          <h5 class="modal-head">Menu</h5>
+          <p class="modal-body-list"><a class="web-link" href="http://www.a2bellydeli.com/menu/">Belly Deli</a></p>
+        </div>
+        <div class="col-lg-9">
+          <!-- <h5 class="modal-head">About</h5> -->
+          <p class="modal-body top-body">Are banh mi the trendiest food in America right now? Maybe. It's hard not to love a French baguette stuffed with protein and pickeled vegetables.</p>
+          <p class="modal-body">The spicy pork banh mi is perhaps Belly Deli's best, but the spicy tofu is great for vegetarians. Add taro chips on the side for a nice crunch.</p>
+          <p class="modal-body"><em>Image courtesy of USA Restaurants</em></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- charleys Content -->
+
+    <div id="charleysWrap">
+      <div id="charleysContent">
+        <div id="charleysNotice">
+        </div>
+        <h1 id="charleysFirstHeading" class="firstHeading">Good Time Charley's</h1>
+        <h6>Ann Arbor's Best Bar</h6>
+        <div id="charleysBodyContent">
+          <img class="small-pic" src=images/charleys-small.jpg>
+          <p>If you're looking for a good time, stop by <b>Charley's</b> and grab a 64 ounce Long Island Iced Tea, affectionately known as a fish bowl.</p>
+          <!-- <p><b>1140 S University Ave, Ann Arbor, MI 48104</b></p> -->
+          <button class="learn-button" id='charleysButton'>Learn more</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- charleys Modal -->
+    <div id="charleysModal" class="modal">
+      <div class="modal-content">
+        <span id="closeCharleys" class="close">&times;</span>
+        <h1 class="modal-title">Good Time Charley's</h1>
+        <h2 class="modal-sub">Ann Arbor's Best Bar</h2>
+        <img class="large-pic" src=images/charleys-full.jpg>
+        <div class="container-fluid row">
+          <div class="col-lg-3">
+            <h5 class="modal-head">Cuisine</h5>
+            <p class="modal-body-list">Bar</p>
+            <h5 class="modal-head">Price</h5>
+            <p class="modal-body-list">$$</p>
+            <h5 class="modal-head">Address</h5>
+            <p class="modal-body-list">1140 S University Ave, Ann Arbor, MI 48104</p>
+            <h5 class="modal-head">Menu</h5>
+            <p class="modal-body-list"><a class="web-link" href="https://www.charleysannarbor.com/">Charley's</a></p>
+          </div>
+          <div class="col-lg-9">
+            <!-- <h5 class="modal-head">About</h5> -->
+            <p class="modal-body top-body">On Thursdays, Charley's serves a great burger special that gets you a full meal for about $7. But let's be honest: The real reason people go to Charley's are for the 64 ounce fishbowl cocktails.</p>
+            <p class="modal-body">Served in oversized mason jars, fishbowls offer distinct fusions of rum, vodka, gin and tequila with everything from fruit juice to iced tea. Favorite combinations include the Love Spell, the Ecto Cooler and the Purple People Eater</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- seafood Content -->
+
+      <div id="seafoodWrap">
+        <div id="seafoodContent">
+          <div id="seafoodNotice">
+          </div>
+          <h1 id="seafoodFirstHeading" class="firstHeading">Real Seafood Company</h1>
+          <h6>Ann Arbor's Best Seafood</h6>
+          <div id="seafoodBodyContent">
+            <img class="small-pic" src=images/seafood-small.jpg>
+            <p>Featuring everything from fish and chips to crab cakes, <b>Real Seafood</b> is a favorite for those who haven't been to the beach in a while.</p>
+            <!-- <p><b>341 S Main St, Ann Arbor, MI 48104</b></p> -->
+            <button class="learn-button" id='seafoodButton'>Learn more</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- seafood Modal -->
+      <div id="seafoodModal" class="modal">
+        <div class="modal-content">
+          <span id="closeSeafood" class="close">&times;</span>
+          <h1 class="modal-title">Real Seafood Company</h1>
+          <h2 class="modal-sub">Ann Arbor's Best Seafood</h2>
+          <img class="large-pic" src=images/seafood-full.jpg>
+          <div class="container-fluid row">
+            <div class="col-lg-3">
+              <h5 class="modal-head">Cuisine</h5>
+              <p class="modal-body-list">Seafood</p>
+              <h5 class="modal-head">Price</h5>
+              <p class="modal-body-list">$$$</p>
+              <h5 class="modal-head">Address</h5>
+              <p class="modal-body-list">341 S Main St, Ann Arbor, MI 48104</p>
+              <h5 class="modal-head">Menu</h5>
+              <p class="modal-body-list"><a class="web-link" href="https://realseafoodcorestaurant.com/our-menu/ann-arbor-menu/">Real Seafood Co.</a></p>
+            </div>
+            <div class="col-lg-9">
+              <!-- <h5 class="modal-head">About</h5> -->
+              <p class="modal-body top-body">Michigan might be the Great Lakes state, but Ann Arbor is more than an hour from the nearest beach. Luckily, Real Seafood offers every type of seafood imaginable.</p>
+              <p class="modal-body">Start off with some fried brussels sprouts before ordering an entree, which should absolutely be the sole. If you're not in the mood for fish, try one of Real Seafood's steaks.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- blimpy Content -->
+
+        <div id="blimpyWrap">
+          <div id="blimpyContent">
+            <div id="blimpyNotice">
+            </div>
+            <h1 id="blimpyFirstHeading" class="firstHeading">Blimpy Burger</h1>
+            <h6>Ann Arbor's Best Burger</h6>
+            <div id="blimpyBodyContent">
+              <img lass="small-pic" src=images/blimpy-small.jpg>
+              <p class="info-text">Order fast and don't make a mistake—otherwise the cooks at <b>Blimpy</b> will give you a hard time.</p>
+              <!-- <p><b>304 S Ashley St, Ann Arbor, MI 48104</b></p> -->
+              <button class="learn-button" id='blimpyButton'>Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- blimpy Modal -->
+        <div id="blimpyModal" class="modal">
+          <div class="modal-content">
+            <span id="closeBlimpy" class="close">&times;</span>
+            <h1 class="modal-title">Blimpy Burger</h1>
+            <h2 class="modal-sub">Ann Arbor's Best Burger</h2>
+            <img class="large-pic" src=images/blimpy-full.jpg>
+            <div class="container-fluid row">
+              <div class="col-lg-3">
+                <h5 class="modal-head">Cuisine</h5>
+                <p class="modal-body-list">Burgers</p>
+                <h5 class="modal-head">Price</h5>
+                <p class="modal-body-list">$</p>
+                <h5 class="modal-head">Address</h5>
+                <p class="modal-body-list">304 S Ashley St, Ann Arbor, MI 48104</p>
+                <h5 class="modal-head">Menu</h5>
+                <p class="modal-body-list"><a class="web-link" href="https://www.blimpyburger.com/menus">Blimpy Burger</a></p>
+              </div>
+              <div class="col-lg-9">
+                <!-- <h5 class="modal-head">About</h5> -->
+                <p class="modal-body top-body">Arguably Ann Arbor's most famous restaurant, eating at Blimpy Burger is an experience. Make sure to know what you want before you get to the front of the line, becuase the chefs cook fast (and don't have the most patience). </p>
+                <p class="modal-body">Start with onion rings or deep fried mushrooms before ordering a  Blimpy Burger and loading it with your favorite toppings. Patties are thin, so don't be afraid to get a triple (or a quad, if you're really hungry!).</p>
+                <p class="modal-body"><em>Image courtesy of Blimpy Burger</em></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+  <div id="map"></div>
+  <!-- <button id="bellsButton" onclick="bellFunction()">Learn more</button> -->
+
+  <div class="footbar">
+    <h4 class="credit">Created by Michael Gawlik</h4>
+  </div>
+
+    <!-- 1. load jquery, this is a CDN or linked library example -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPMrx92bTo2AjpRYmT_iUaAdPDS8Xlc58&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
